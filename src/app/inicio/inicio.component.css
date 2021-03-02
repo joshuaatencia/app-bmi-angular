@@ -1,0 +1,79 @@
+.card {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #0A0E21;
+}
+
+h5,
+p {
+    color: white;
+}
+
+.fondo-item {
+    background-color: #FF111328;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.altura-caja {
+    height: 160px;
+}
+
+.row {
+    padding: 10px;
+}
+
+.sexo {
+    color: white;
+    font-size: 40px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.estilo-numero {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+    color: white;
+}
+
+.cm {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -5px;
+}
+
+.form-range {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #ff3366;
+}
+
+.mas-menos {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #ff4c4f5e;
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 3px;
+}
+
+.btn-color {
+    background-color: #ff3366;
+    border-color: #ff3366;
+    border-radius: 25px;
+}
+
+.sexo-desactivo {
+    background-color: #7d2f2f33;
+}

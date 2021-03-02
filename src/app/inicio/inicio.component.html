@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <h5>BIM CALCULATOR</h5>
+            <div class="row altura-caja">
+                <div class="col-6">
+                    <div class="fondo-item" [ngClass]="{'sexo-desactivo': sexo === 'Femenino'}">
+                        <div class="contenedor" style="cursor: pointer;" (click)="masculino()">
+                            <i class="fas fa-mars sexo"></i>
+                            <p>Masculino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="fondo-item" [ngClass]="{'sexo-desactivo': sexo === 'Masculino'}">
+                        <div class="contenedor" style="cursor: pointer;" (click)="femenino()">
+                            <i class="fas fa-venus sexo"></i>
+                            <p>Femenino</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row altura-caja">
+                <div class="col-12">
+                    <div class="fondo-item">
+                        <div class="contenedor">
+                            <p>Altura</p>
+                            <div class="estilo-numero">
+                                {{altura}} <span class="cm">cm</span>
+                            </div>
+                            <input (input)="cambiarAltura($event)" [value]="altura" min="120" max="220" type="range" class="form-range">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row altura-caja">
+                <div class="col-6">
+                    <div class="fondo-item">
+                        <div class="contenedor">
+                            <p>
+                                Peso
+                            </p>
+                            <div class="estilo-numero">{{peso}}</div>
+                            <div>
+                                <i class="fas fa-minus mas-menos" (click)="peso = peso - 1"></i>
+                                <i class="fas fa-plus mas-menos" (click)="peso = peso + 1"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="fondo-item">
+                        <div class="contenedor">
+                            <p>
+                                Edad
+                            </p>
+                            <div class="estilo-numero">{{edad}}</div>
+                            <div>
+                                <i class="fas fa-minus mas-menos" (click)="edad = edad - 1"></i>
+                                <i class="fas fa-plus mas-menos" (click)="edad = edad + 1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button (click)="calcular()" class="btn btn-primary btn-block btn-lg btn-color">CALCULAR</button>
+            </div>
+        </div>
+    </div>
+</div>
